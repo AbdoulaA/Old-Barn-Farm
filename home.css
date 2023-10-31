@@ -172,7 +172,7 @@ h6 {
 .services__title {
   text-align: center;
   font-size: 50px;
-  color: #5e151a;
+  color: #8e1b23;
 }
 
 .service__title {
@@ -327,7 +327,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 90vh;
+  height: 100dvh;
   padding: 36px;
   display: flex;
   flex-direction: column;
