@@ -316,7 +316,7 @@ section {
 
 #about {
   background: linear-gradient(to top, rgba(0, 0, 0, 0)5%, #8e1b23 55%),
-    url("./assets/trees.JPG");
+    url("./assets/trees.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
