@@ -17,6 +17,9 @@
 p {
   color: #250001;
 }
+a {
+    text-decoration: none;
+}
 
 h1,
 h2,
@@ -26,6 +29,10 @@ h5,
 h6 {
   color: #250001;
   font-family: "DM Serif Display";
+}
+
+section {
+    height: 100vh;
 }
 
 /* nav */
@@ -46,15 +53,6 @@ h6 {
   font-size: 45px;
   color: #fdca40;
   font-weight: bold;
-}
-
-.address {
-  font-family: "DM Serif";
-  color: #f3eff5;
-  font-size: 18px;
-}
-
-.logo:hover {
   background-image: linear-gradient(
     to top left,
     #462523 0,
@@ -67,6 +65,15 @@ h6 {
   );
   color: transparent;
   -webkit-background-clip: text;
+}
+
+.address {
+  font-family: "DM Serif";
+  color: #f3eff5;
+  font-size: 18px;
+}
+
+.logo:hover {
   cursor: pointer;
 }
 
@@ -94,7 +101,7 @@ h6 {
 /* header */
 
 #header {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), #8e1b23 45%),
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #8e1b23 65%),
     url("./assets/20190406_151339.JPEG");
   background-size: cover;
   background-position: center;
@@ -180,6 +187,8 @@ h6 {
   z-index: 5;
   font-size: 30px;
   text-shadow: 1px 1px 2px white;
+  transition: all 200ms ease;
+
 }
 
 .service__btn {
@@ -253,38 +262,22 @@ h6 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
 }
 
+.service:hover .service__title {
+    translate: 0 50px;
+}
+
 .service i {
   font-size: 3.45rem;
   margin: 1rem 0;
 }
 
-.service1 i,
-.service1 h4,
-.service1 .cta {
+.service i,
+.service h4,
+.service .cta {
   color: #8e1b23;
 }
 
-.service1:hover {
-  border: 2px solid #8e1b23;
-}
-
-.service2 i,
-.service2 h4,
-.service2 .cta {
-  color: #8e1b23;
-}
-
-.service2:hover {
-  border: 2px solid #8e1b23;
-}
-
-.service3 i,
-.service3 h4,
-.service3 .cta {
-  color: #8e1b23;
-}
-
-.service3:hover {
+.service:hover {
   border: 2px solid #8e1b23;
 }
 
@@ -322,8 +315,8 @@ h6 {
 /* about */
 
 #about {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0)5%, #8e1b23 65%),
-    url("./assets/trees.JPEG");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0)5%, #8e1b23 55%),
+    url("./assets/trees.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -346,6 +339,97 @@ h6 {
 }
 
 .about__subtitle {
-    margin-top: 36px;
+    margin-top: 86px;
     font-size: 24px;
 }
+
+/* contact */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdca40;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 50vh;
+}
+
+.contact__title {
+    font-size: 50px;
+    color: #8e1b23;
+}
+
+.contact {
+    margin-top: 36px;
+}
+
+.contact-form__title {
+    color: #fdca40;
+}
+
+.contact {
+    background-color: #8e1b23;
+    padding: 24px;
+    
+}
+
+.submit-btn {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-family: "DM Serif";
+    color: #fdca40;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+input, textarea {
+    border: #fdca40 2px solid;
+    background-color: #8e1b23;
+    color: #f3eff5;
+    outline: none;
+    caret-color: #fdca40;
+    padding: 2px;
+    
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border: #f3eff5 2px solid;
+    border-radius: 0;
+}
+
+input::placeholder, textarea::placeholder {
+    opacity: 0;
+}
+
+.submit {
+    height: 35px;
+    width: 75px;
+    background-color: #fdca40;
+    color: #5e151a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Serif Display";
+}
+
+.submit:hover {
+    background-color: #f3eff5;
+    cursor: pointer;
+}
+
